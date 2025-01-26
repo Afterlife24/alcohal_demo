@@ -8,7 +8,7 @@ const promotions = [
     id: 1,
     title: 'Summer Sale',
     description: 'Get 20% off on all wines',
-    imageUrl: 'https://images.unsplash.com/photo-1567072379-fac2566e3292?auto=format&fit=crop&q=80&w=800',
+    imageUrl: 'https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&q=80&w=800',
     badge: 'Limited Time',
   },
   {
