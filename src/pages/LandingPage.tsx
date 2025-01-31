@@ -105,6 +105,61 @@ export const LandingPage: React.FC = () => {
           ))}
         </div>
       </div>
+
+
+      <div className="mb-12">
+        <div className="h-[50vh] relative overflow-hidden rounded-2xl mb-8">
+          <img
+            src={promotions[0].imageUrl}
+            alt={promotions[0].title}
+            className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 flex items-center justify-center text-white">
+            <div className="text-center max-w-2xl px-4">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Sparkles className="w-5 h-5" />
+                <span className="text-sm font-medium uppercase tracking-wider">Special Offer</span>
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">{promotions[0].title}</h2>
+              <p className="text-lg md:text-xl mb-8">{promotions[0].description}</p>
+              <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      <div className="mb-12">
+        <div className="h-[50vh] relative overflow-hidden rounded-2xl mb-8">
+          <img
+            src={promotions[0].imageUrl}
+            alt={promotions[0].title}
+            className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 flex items-center justify-center text-white">
+            <div className="text-center max-w-2xl px-4">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Sparkles className="w-5 h-5" />
+                <span className="text-sm font-medium uppercase tracking-wider">Special Offer</span>
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">{promotions[0].title}</h2>
+              <p className="text-lg md:text-xl mb-8">{promotions[0].description}</p>
+              <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      
     </div>
+    
   );
 };

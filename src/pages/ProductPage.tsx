@@ -17,14 +17,14 @@ export const ProductPage: React.FC = () => {
   }
 
   const handleAddToCart = () => {
-    addToCart({ ...product, cartQuantity: quantity });
+    addToCart(product, quantity);
     setShowToast(true);
   };
 
   return (
     <div className="container mx-auto px-4 py-8">
       <Toast
-        message={`${product.name} added to cart!`}
+        message={`${quantity}x ${product.name} added to cart!`}
         isVisible={showToast}
         onClose={() => setShowToast(false)}
       />
@@ -75,6 +75,7 @@ export const ProductPage: React.FC = () => {
               </div>
             </div>
 
+            {/* Quantity Selector */}
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Quantity
@@ -101,12 +102,24 @@ export const ProductPage: React.FC = () => {
               </div>
             </div>
 
-            <button
-              onClick={handleAddToCart}
-              className="w-full bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-colors transform active:scale-[0.98] duration-200 font-medium"
-            >
-              Add to Cart
-            </button>
+            {/* Buttons */}
+            <div className="space-y-4">
+              {/* Add to Cart Button */}
+              <button
+                onClick={handleAddToCart}
+                className="w-full bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-colors transform active:scale-[0.98] duration-200 font-medium"
+              >
+                Add to Cart
+              </button>
+
+              {/* Go to Cart Button (Same as Add to Cart) */}
+              <Link
+                to="/cart"
+                className="w-full bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-colors transform active:scale-[0.98] duration-200 font-medium flex items-center justify-center"
+              >
+                Go to Cart
+              </Link>
+            </div>
           </div>
         </div>
       </div>
