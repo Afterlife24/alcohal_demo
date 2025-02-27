@@ -120,7 +120,7 @@
 //       for (const product of filteredProducts) {
 //         try {
 //           // Replace with your own API endpoint
-//           const response = await fetch(`https://dev-server.gofastapi.com/api/products/${product.id}/quantity`);
+//           const response = await fetch(`http://localhost:5000/api/products/${product.id}/quantity`);
 
 //           if (!response.ok) {
 //             throw new Error(`Error fetching quantity for product ${product.id}`);
@@ -254,7 +254,7 @@ export const CategoryPage: React.FC = () => {
       for (const product of filteredProducts) {
         try {
           // Replace with your own API endpoint
-          const response = await fetch(`https://dev-server.gofastapi.com/api/products/${product.id}/quantity`);
+          const response = await fetch(`http://localhost:5000/api/products/${product.id}/quantity`);
 
           if (!response.ok) {
             throw new Error(`Error fetching quantity for product ${product.id}`);

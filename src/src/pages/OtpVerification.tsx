@@ -29,7 +29,7 @@
 // //     setError("");
 // //     try {
 // //       const response = await fetch(
-// //         "https://dev-server.gofastapi.com/sendotp",
+// //         "http://localhost:5000/sendotp",
 // //         {
 // //           method: "POST",
 // //           body: JSON.stringify({ email }),
@@ -59,7 +59,7 @@
 
 // //     try {
 // //       const response = await fetch(
-// //         "https://dev-server.gofastapi.com/verify",
+// //         "http://localhost:5000/verify",
 // //         {
 // //           method: "POST",
 // //           body: JSON.stringify({ email, otp: otpCheck }),
@@ -191,7 +191,7 @@
 //     setError("");
 //     try {
 //       const response = await fetch(
-//         "https://dev-server.gofastapi.com/sendotp",
+//         "http://localhost:5000/sendotp",
 //         {
 //           method: "POST",
 //           body: JSON.stringify({ email }),
@@ -221,7 +221,7 @@
 
 //     try {
 //       const response = await fetch(
-//         "https://dev-server.gofastapi.com/verify",
+//         "http://localhost:5000/verify",
 //         {
 //           method: "POST",
 //           body: JSON.stringify({ email, otp: otpCheck }),
@@ -360,7 +360,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError("");
     try {
       const response = await fetch(
-        "https://dev-server.gofastapi.com/sendotp",
+        "http://localhost:5000/sendotp",
         {
           method: "POST",
           body: JSON.stringify({ email }),
@@ -389,7 +389,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
 
     try {
       const response = await fetch(
-        "https://dev-server.gofastapi.com/verify",
+        "http://localhost:5000/verify",
         {
           method: "POST",
           body: JSON.stringify({ email, otp: otpCheck }),
