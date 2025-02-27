@@ -206,7 +206,7 @@ export const ProductPage: React.FC = () => {
     const fetchProductQuantity = async () => {
       if (product) {
         try {
-          const response = await fetch(`https://dev-server.gofastapi.com/api/products/${product.id}/quantity`);
+          const response = await fetch(`https://alcohal-server.gofastapi.com/api/products/${product.id}/quantity`);
           if (!response.ok) {
             throw new Error(`Error fetching quantity for product ${product.id}`);
           }
