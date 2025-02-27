@@ -186,7 +186,7 @@
 //     };
 //     console.log("Order Data:", data);
 
-//     const response = await fetch("http://localhost:5000/sendOrders", {
+//     const response = await fetch("https://dev-server.gofastapi.com/sendOrders", {
 //       method: "POST",
 //       headers: {
 //         "Content-Type": "application/json",
@@ -706,7 +706,7 @@ export const CartPage: React.FC = () => {
       };
       console.log("Order Data:", data);
 
-      const response = await fetch("http://localhost:5000/sendOrders", {
+      const response = await fetch("https://dev-server.gofastapi.com/sendOrders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
