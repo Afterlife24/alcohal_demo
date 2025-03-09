@@ -360,7 +360,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError("");
     try {
       const response = await fetch(
-        "http://localhost:5000/sendotp",
+        "https://alcohal-server.gofastapi.com/sendotp",
         {
           method: "POST",
           body: JSON.stringify({ email }),
@@ -389,7 +389,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
 
     try {
       const response = await fetch(
-        "http://localhost:5000/verify",
+        "https://alcohal-server.gofastapi.com/verify",
         {
           method: "POST",
           body: JSON.stringify({ email, otp: otpCheck }),
