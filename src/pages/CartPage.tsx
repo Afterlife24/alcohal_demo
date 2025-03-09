@@ -186,7 +186,7 @@
 //     };
 //     console.log("Order Data:", data);
 
-//     const response = await fetch("https://alcohal-server.gofastapi.com/sendOrders", {
+//     const response = await fetch("http://localhost:5000/sendOrders", {
 //       method: "POST",
 //       headers: {
 //         "Content-Type": "application/json",

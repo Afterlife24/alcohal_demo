@@ -19,7 +19,7 @@
 //       if (product) {
 //         console.log("product :" ,product)
 //         try {
-//           const response = await fetch(`http://localhost:5000/api/products/${product.id}/quantity`);
+//           const response = await fetch(`https://alcohal-server.gofastapi.com/api/products/${product.id}/quantity`);
 //           if (!response.ok) {
 //             console.log("error1")
 //             throw new Error(`Error fetching quantity for product ${product.id}`);
